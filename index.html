@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Riki Salam — Photography</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: white;
+            color: black;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 16px;
+        }
+
+        header {
+            padding: 27px 20px 0 20px;
+        }
+
+        .top-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        /* HANDWRITTEN LOGO */
+        .logo {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .logo img {
+            display: block;
+            width: 210px;
+            height: auto;
+        }
+
+        .navigation {
+            display: flex;
+            gap: 36px;
+        }
+
+        .navigation a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .navigation a:hover {
+            text-decoration: underline;
+        }
+
+        .contact {
+            text-align: center;
+            margin-top: 36px;
+            line-height: 1.15;
+        }
+
+        /* EMAIL */
+        .contact a {
+            color: black;
+            text-decoration: none;
+        }
+
+        /* EMAIL HOVER */
+        .contact a:hover {
+            color: blue;
+            text-decoration: none;
+        }
+
+        /* EMAIL WHILE CLICKING */
+        .contact a:active {
+            color: blue;
+            text-decoration: none;
+        }
+
+        .gallery {
+            width: 65vw;
+            margin: 36px auto 0 auto;
+
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .photo {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin: 0;
+        }
+
+        #about {
+            width: 65vw;
+            margin: 100px auto;
+        }
+
+        .about-inner {
+            max-width: 600px;
+        }
+
+        .about-inner p {
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: 700px) {
+
+            header {
+                padding: 20px 15px 0 15px;
+            }
+
+            .logo img {
+                width: 180px;
+            }
+
+            .navigation {
+                gap: 20px;
+            }
+
+            .gallery {
+                width: calc(100vw - 30px);
+                margin-top: 30px;
+                gap: 12px;
+            }
+
+            #about {
+                width: calc(100vw - 30px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="top-row">
+
+            <!-- HANDWRITTEN NAME -->
+            <div class="logo">
+                <img
+                    src="images/riki-salam.png"
+                    alt="Riki Salam"
+                >
+            </div>
+
+            <!-- NAVIGATION -->
+            <nav class="navigation">
+                <a href="#index">Index</a>
+                <a href="#about">About</a>
+            </nav>
+
+        </div>
+
+        <!-- CONTACT -->
+        <div class="contact">
+            Work &amp; Press inquiries:<br>
+            <a href="mailto:rikisalamfoto@gmail.com">
+                rikisalamfoto@gmail.com
+            </a>
+        </div>
+
+    </header>
+
+
+    <main id="index">
+
+        <div class="gallery">
+
+            <!-- PHOTO 1 -->
+            <img
+                class="photo"
+                src="images/photo1.jpg"
+                alt="Photography portfolio image"
+            >
+
+            <!-- PHOTO 2 -->
+            <img
+                class="photo"
+                src="images/photo2.jpg"
+                alt="Photography portfolio image"
+            >
+
+            <!-- VIDEO 1 -->
+            <video
+                class="photo"
+                autoplay
+                muted
+                loop
+                playsinline
+            >
+                <source src="videos/video1.mp4" type="video/mp4">
+            </video>
+
+            <!-- PHOTO 3 -->
+            <img
+                class="photo"
+                src="images/photo3.jpg"
+                alt="Photography portfolio image"
+            >
+
+            <!-- VIDEO 2 -->
+            <video
+                class="photo"
+                autoplay
+                muted
+                loop
+                playsinline
+            >
+                <source src="videos/video2.mp4" type="video/mp4">
+            </video>
+
+            <!-- PHOTO 4 -->
+            <img
+                class="photo"
+                src="images/photo4.jpg"
+                alt="Photography portfolio image"
+            >
+
+            <!-- PHOTO 5 -->
+            <img
+                class="photo"
+                src="images/photo5.jpg"
+                alt="Photography portfolio image"
+            >
+
+            <!-- VIDEO 4 -->
+            <video
+                class="photo"
+                autoplay
+                muted
+                loop
+                playsinline
+            >
+                <source src="videos/video4.mp4" type="video/mp4">
+            </video>
+
+            <!-- PHOTO 6 -->
+            <img
+                class="photo"
+                src="images/photo6.jpg"
+                alt="Photography portfolio image"
+            >
+
+            <!-- VIDEO 3 — AFTER PHOTO 6 -->
+            <video
+                class="photo"
+                autoplay
+                muted
+                loop
+                playsinline
+            >
+                <source src="videos/video3.mp4" type="video/mp4">
+            </video>
+
+            <!-- PHOTO 7 -->
+            <img
+                class="photo"
+                src="images/photo7.jpg"
+                alt="Photography portfolio image"
+            >
+
+            <!-- PHOTO 8 -->
+            <img
+                class="photo"
+                src="images/photo8.jpg"
+                alt="Photography portfolio image"
+            >
+
+            <!-- PHOTO 9 -->
+            <img
+                class="photo"
+                src="images/photo9.jpg"
+                alt="Photography portfolio image"
+            >
+
+            <!-- VIDEO 5 — AFTER PHOTO 9 -->
+            <video
+                class="photo"
+                autoplay
+                muted
+                loop
+                playsinline
+            >
+                <source src="videos/video5.mp4" type="video/mp4">
+            </video>
+
+            <!-- PHOTO 10 -->
+            <img
+                class="photo"
+                src="images/photo10.jpg"
+                alt="Photography portfolio image"
+            >
+
+            <!-- PHOTO 11 -->
+            <img
+                class="photo"
+                src="images/photo11.jpg"
+                alt="Photography portfolio image"
+            >
+
+            <!-- PHOTO 12 -->
+            <img
+                class="photo"
+                src="images/photo12.jpg"
+                alt="Photography portfolio image"
+            >
+
+        </div>
+
+    </main>
+
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+
+        <div class="about-inner">
+
+            <p>About</p>
+
+            <p>
+                Riki Salam is a photographer and videographer based in Brisbane.
+            </p>
+
+        </div>
+
+    </section>
+
+</body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,142 @@
+/* =========================
+   BASIC RESET
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: white;
+    color: black;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+header {
+    padding: 27px 20px 0 20px;
+}
+
+
+/* Name + Navigation */
+
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.logo {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.navigation {
+    display: flex;
+    gap: 36px;
+}
+
+.navigation a {
+    color: black;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   CONTACT
+   ========================= */
+
+.contact {
+    text-align: center;
+    margin-top: 36px;
+    line-height: 1.15;
+}
+
+.contact a {
+    color: black;
+}
+
+
+/* =========================
+   PORTFOLIO / GALLERY
+   ========================= */
+
+.gallery {
+    width: 65vw;
+    margin: 36px auto 0 auto;
+}
+
+
+/* Images + Videos */
+
+.photo {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 0 8px 0;
+}
+
+
+/* Remove gap after the final image/video */
+
+.photo:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   ABOUT
+   ========================= */
+
+#about {
+    width: 65vw;
+    margin: 100px auto;
+}
+
+.about-inner {
+    max-width: 600px;
+}
+
+.about-inner p {
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 700px) {
+
+    header {
+        padding: 20px 15px 0 15px;
+    }
+
+    .navigation {
+        gap: 20px;
+    }
+
+    .gallery {
+        width: calc(100vw - 30px);
+        margin-top: 30px;
+    }
+
+    #about {
+        width: calc(100vw - 30px);
+    }
+}
