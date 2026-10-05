@@ -37,10 +37,22 @@ header {
     align-items: flex-start;
 }
 
+
+/* Handwritten logo */
+
 .logo {
     font-weight: bold;
     font-style: italic;
 }
+
+.logo img {
+    display: block;
+    width: 210px;
+    height: auto;
+}
+
+
+/* Navigation */
 
 .navigation {
     display: flex;
@@ -69,6 +81,17 @@ header {
 
 .contact a {
     color: black;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    color: blue;
+    text-decoration: none;
+}
+
+.contact a:active {
+    color: blue;
+    text-decoration: none;
 }
 
 
@@ -92,7 +115,7 @@ header {
 }
 
 
-/* Remove gap after the final image/video */
+/* Remove gap after final image/video */
 
 .photo:last-child {
     margin-bottom: 0;
@@ -106,13 +129,16 @@ header {
 #about {
     width: 65vw;
     margin: 100px auto;
+    font-size: 16px;
 }
 
 .about-inner {
     max-width: 600px;
+    font-size: 16px;
 }
 
 .about-inner p {
+    font-size: 16px;
     margin-bottom: 30px;
 }
 
@@ -123,20 +149,61 @@ header {
 
 @media (max-width: 700px) {
 
+    /* Header */
+
     header {
-        padding: 20px 15px 0 15px;
+        padding: 50px 20px 0 20px;
     }
+
+
+    /* Smaller handwritten logo */
+
+    .logo img {
+        width: 120px;
+        height: auto;
+    }
+
+
+    /* Smaller navigation */
 
     .navigation {
-        gap: 20px;
+        gap: 18px;
+        font-size: 14px;
     }
+
+
+    /* Smaller contact text */
+
+    .contact {
+        margin-top: 38px;
+        font-size: 14px;
+        line-height: 1.15;
+    }
+
+
+    /* Mobile gallery */
 
     .gallery {
-        width: calc(100vw - 30px);
-        margin-top: 30px;
+        width: calc(100vw - 40px);
+        margin: 36px auto 0 auto;
     }
 
+
+    /* About section */
+
     #about {
-        width: calc(100vw - 30px);
+        width: calc(100vw - 40px);
+        margin: 80px auto;
+        font-size: 16px;
+    }
+
+    .about-inner {
+        max-width: 600px;
+        font-size: 16px;
+    }
+
+    .about-inner p {
+        font-size: 16px;
+        margin-bottom: 30px;
     }
 }
